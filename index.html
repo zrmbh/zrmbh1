@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>庄方宜｜个人档案 // WULING DEVELOPMENT ZONE</title>
+<meta name="description" content="庄方宜个人档案 —— 宏山科学院研究人员、武陵科学发展区管代、息壤新材项目负责人天师。">
+<meta name="theme-color" content="#0d0f0c">
+<meta property="og:title" content="庄方宜｜个人档案">
+<meta property="og:description" content="宏山科学院 · 武陵科学发展区管代 · 息壤新材项目负责人天师">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="assets/avatar.jpg">
+<link rel="icon" href="assets/favicon.jpg">
+<link rel="apple-touch-icon" href="assets/avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot__inner">
+    <div class="boot__logo">
+      <span class="boot__logo-mark">△</span>
+      <span class="boot__logo-text">END<span>FIELD</span> INDUSTRY</span>
+    </div>
+    <div class="boot__log" id="bootLog"></div>
+    <div class="boot__bar"><i id="bootBar"></i></div>
+    <div class="boot__pct"><span id="bootPct">0</span>%</div>
+  </div>
+</div>
+
+<div class="bg" aria-hidden="true">
+  <div class="bg__grid"></div>
+  <div class="bg__glow bg__glow--a"></div>
+  <div class="bg__glow bg__glow--b"></div>
+  <svg class="bg__topo" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+    <g fill="none" stroke="currentColor" stroke-width="1">
+      <path d="M-50 620 C 220 520 380 700 640 600 S 1080 430 1500 560"/>
+      <path d="M-50 680 C 240 590 400 760 660 660 S 1100 490 1500 620"/>
+      <path d="M-50 740 C 260 660 420 820 680 720 S 1120 550 1500 680"/>
+      <path d="M-50 200 C 200 120 420 300 700 210 S 1120 90 1500 190"/>
+      <path d="M-50 260 C 220 180 440 360 720 270 S 1140 150 1500 250"/>
+    </g>
+  </svg>
+  <div class="bg__scan"></div>
+  <div class="bg__noise"></div>
+</div>
+
+<div class="reticle" id="reticle" aria-hidden="true">
+  <span class="reticle__h"></span><span class="reticle__v"></span>
+  <span class="reticle__ring"></span>
+</div>
+
+<header class="hud" id="hud">
+  <div class="hud__brand">
+    <span class="hud__mark">△</span>
+    <span class="hud__name">ZHUANG&nbsp;FANGYI<em>/</em>庄方宜</span>
+  </div>
+  <nav class="hud__nav" id="nav">
+    <a href="#profile" class="hud__link is-active"><i>01</i>基础信息</a>
+    <a href="#education" class="hud__link"><i>02</i>教育经历</a>
+    <a href="#career" class="hud__link"><i>03</i>职业经历</a>
+    <a href="#events" class="hud__link"><i>04</i>重大事件</a>
+    <a href="#project" class="hud__link"><i>05</i>核心项目</a>
+    <a href="#life" class="hud__link"><i>06</i>兴趣生活</a>
+  </nav>
+  <div class="hud__meta">
+    <span class="hud__dot"></span>
+    <span class="hud__status">档案状态：可读</span>
+    <span class="hud__clock" id="clock">--:--:--</span>
+  </div>
+  <button class="hud__burger" id="burger" aria-label="打开导航"><i></i><i></i><i></i></button>
+</header>
+<div class="hud__progress" id="progress"></div>
+
+<main class="wrap">
+
+  <section class="hero" id="top">
+    <div class="hero__left reveal">
+      <div class="tag"><span class="tag__dot"></span>PERSONNEL FILE / WULING · 档案编号 WL-0708</div>
+      <h1 class="hero__name">
+        <span class="hero__name-cn">庄方宜</span>
+        <span class="hero__name-en">ZHUANG FANGYI</span>
+      </h1>
+      <p class="hero__role">
+        <span class="hero__role-fix">宏山科学院 · 研究人员</span>
+        <span class="hero__typed" id="typed"></span><span class="caret"></span>
+      </p>
+      <p class="hero__desc">
+        从科研人员到城市管理者，她所承担的职责早已不再局限于实验室。
+        在她看来，<b>武陵的发展与这里居民的生活</b>，同样属于需要守护的研究成果。
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#project"><span>查看核心项目</span><i>→</i></a>
+        <a class="btn btn--ghost" href="#life"><span>兴趣与生活</span><i>↓</i></a>
+      </div>
+      <ul class="hero__stats">
+        <li><b>10<em>年</em></b><span>武陵重建周期</span></li>
+        <li><b>1<em>项</em></b><span>在研核心项目</span></li>
+        <li><b>0<em>感染</em></b><span>医学检测结论</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__right reveal" data-delay="1">
+      <div class="portrait" id="portrait">
+        <div class="portrait__frame">
+          <img class="portrait__img" src="assets/avatar.jpg" alt="庄方宜头像" width="880" height="880" loading="eager">
+          <span class="portrait__scan"></span>
+          <span class="portrait__hud portrait__hud--tl">ID 0708</span>
+          <span class="portrait__hud portrait__hud--tr">麒麟</span>
+          <span class="portrait__hud portrait__hud--bl">宏山科学院</span>
+          <span class="portrait__hud portrait__hud--br">未感染</span>
+          <span class="portrait__bracket portrait__bracket--tl"></span>
+          <span class="portrait__bracket portrait__bracket--tr"></span>
+          <span class="portrait__bracket portrait__bracket--bl"></span>
+          <span class="portrait__bracket portrait__bracket--br"></span>
+        </div>
+        <div class="portrait__plate">
+          <span>武陵科学发展区</span>
+          <b>管代 · 天师</b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="profile">
+    <div class="sec__head reveal">
+      <span class="sec__no">01</span>
+      <h2 class="sec__title">基础信息</h2>
+      <span class="sec__en">BASIC&nbsp;INFORMATION</span>
+      <span class="sec__line"></span>
+    </div>
+
+    <div class="grid grid--profile">
+      <div class="card card--rows reveal">
+        <div class="card__cap"><i></i>人事登记表 / REGISTRY</div>
+        <dl class="rows">
+          <div class="rows__row"><dt>姓名</dt><dd>庄方宜</dd></div>
+          <div class="rows__row"><dt>性别</dt><dd>女</dd></div>
+          <div class="rows__row"><dt>身份认证</dt><dd>宏山科学院</dd></div>
+          <div class="rows__row"><dt>生日</dt><dd>8月7日</dd></div>
+          <div class="rows__row"><dt>种族</dt><dd>麒麟</dd></div>
+          <div class="rows__row rows__row--wide">
+            <dt>矿石病感染情况</dt>
+            <dd><span class="chip chip--ok">参照医学检测报告，确认为非感染者</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="card card--radar reveal" data-delay="1">
+        <div class="card__cap"><i></i>综合体检测试 / COMPREHENSIVE TEST</div>
+        <div class="radar">
+          <canvas id="radar" width="720" height="560" aria-label="综合体检测试雷达图"></canvas>
+          <div class="radar__legend">
+            <span><i style="--c:#c6d93c"></i>生理强度</span>
+            <span><i style="--c:#c6d93c"></i>作战技巧</span>
+            <span><i style="--c:#a8d84a"></i>战术规划</span>
+            <span><i style="--c:#7fe3c0"></i>源石技艺适应性</span>
+          </div>
+        </div>
+        <ul class="meters">
+          <li><span class="meters__k">生理强度</span><span class="meters__bar"><i style="--v:56%"></i></span><span class="meters__v">标准</span></li>
+          <li><span class="meters__k">作战技巧</span><span class="meters__bar"><i style="--v:56%"></i></span><span class="meters__v">标准</span></li>
+          <li><span class="meters__k">战术规划</span><span class="meters__bar"><i style="--v:82%"></i></span><span class="meters__v">优良</span></li>
+          <li><span class="meters__k">源石技艺适应性</span><span class="meters__bar"><i style="--v:97%"></i></span><span class="meters__v">卓越</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="education">
+    <div class="sec__head reveal">
+      <span class="sec__no">02</span>
+      <h2 class="sec__title">教育经历</h2>
+      <span class="sec__en">EDUCATION</span>
+      <span class="sec__line"></span>
+    </div>
+
+    <div class="grid grid--two">
+      <article class="card card--edu reveal">
+        <div class="card__cap"><i></i>院校 / ACADEMY</div>
+        <h3 class="card__h">宏山科学院<span class="sep">|</span>天师府学院</h3>
+        <p class="card__p">
+          庄方宜接受过系统的科研与源石技术教育，并在学习期间展现出优秀的知识储备与研究能力。
+        </p>
+        <p class="card__p">
+          毕业后进入宏山科学院相关研究体系，参与<b>息壤新材</b>等项目的研究工作，并逐渐成为武陵地区重要的科研人员。
+        </p>
+        <div class="tags">
+          <span>源石技术</span><span>材料学</span><span>裂隙研究</span><span>城市规划</span>
+        </div>
+      </article>
+
+      <article class="card card--quote reveal" data-delay="1">
+        <div class="card__cap"><i></i>研修轨迹 / TRACE</div>
+        <ol class="steps">
+          <li><b>系统科研与源石技术教育</b><span>知识储备与研究能力评估：优秀</span></li>
+          <li><b>进入宏山科学院研究体系</b><span>参与息壤新材项目及裂隙相关研究</span></li>
+          <li><b>成为武陵地区重要科研人员</b><span>研究方向与区域发展深度绑定</span></li>
+        </ol>
+        <blockquote class="quote">
+          “科研成果最终仍应回到普通人的生活之中。”
+        </blockquote>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="career">
+    <div class="sec__head reveal">
+      <span class="sec__no">03</span>
+      <h2 class="sec__title">职业经历</h2>
+      <span class="sec__en">CAREER&nbsp;RECORD</span>
+      <span class="sec__line"></span>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__rail" aria-hidden="true"><i id="railFill"></i></div>
+
+      <article class="tl reveal">
+        <div class="tl__node"><span></span></div>
+        <div class="tl__card card">
+          <div class="tl__top">
+            <span class="tl__idx">A-01</span>
+            <span class="tl__badge">科研</span>
+          </div>
+          <h3 class="tl__h">宏山科学院<span class="sep">｜</span>研究人员</h3>
+          <p class="tl__p">早期主要从事科研工作，参与<b>息壤新材</b>项目及<b>裂隙</b>相关研究。</p>
+        </div>
+      </article>
+
+      <article class="tl reveal">
+        <div class="tl__node"><span></span></div>
+        <div class="tl__card card">
+          <div class="tl__top">
+            <span class="tl__idx">A-02</span>
+            <span class="tl__badge tl__badge--alt">管理</span>
+          </div>
+          <h3 class="tl__h">武陵科学发展区<span class="sep">｜</span>管代</h3>
+          <p class="tl__p">后任武陵科学发展区管代，负责当地<b>科研发展、城市建设</b>及相关事务。</p>
+        </div>
+      </article>
+
+      <article class="tl reveal">
+        <div class="tl__node"><span></span></div>
+        <div class="tl__card card">
+          <div class="tl__top">
+            <span class="tl__idx">A-03</span>
+            <span class="tl__badge tl__badge--hot">在任</span>
+          </div>
+          <h3 class="tl__h">息壤新材项目<span class="sep">｜</span>负责人天师</h3>
+          <p class="tl__p">目前兼任息壤新材项目负责人天师，并与<b>终末地工业</b>展开裂隙相关研究合作。</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="lede reveal">
+      从科研人员到城市管理者，庄方宜所承担的职责早已不再局限于实验室。
+      对她而言，<b>武陵的发展与这里居民的生活</b>同样属于她需要守护的研究成果。
+    </p>
+  </section>
+
+  <section class="sec" id="events">
+    <div class="sec__head reveal">
+      <span class="sec__no">04</span>
+      <h2 class="sec__title">重大事件经历</h2>
+      <span class="sec__en">INCIDENT&nbsp;LOG</span>
+      <span class="sec__line"></span>
+    </div>
+
+    <div class="grid grid--two grid--events">
+      <article class="card card--alert reveal">
+        <div class="card__cap card__cap--alert"><i></i>事件记录 / 武陵科考站事件</div>
+        <div class="alert__stamp">已归档</div>
+        <ul class="bullets">
+          <li>早年参与武陵地区的<b>科考与研究工作</b>。</li>
+          <li>科考站发生重大事故后，原有研究团队遭受严重损失，武陵的发展也一度陷入停滞。</li>
+          <li>在此后的<b>十年间</b>，庄方宜逐渐承担起重建武陵的责任。</li>
+          <li>她从一名年轻的科研人员，成长为能够独立处理科研、城市建设与公共事务的武陵科学发展区管代。</li>
+        </ul>
+        <div class="gauge">
+          <div class="gauge__label"><span>区域重建进度</span><b>进行中</b></div>
+          <div class="gauge__track"><i style="--v:76%"></i></div>
+          <div class="gauge__ticks" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="card card--map reveal" data-delay="1">
+        <div class="card__cap"><i></i>区域示意 / WULING AREA</div>
+        <div class="map">
+          <svg viewBox="0 0 420 320" role="img" aria-label="武陵区域示意图">
+            <defs>
+              <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#c6d93c" stop-opacity=".55"/>
+                <stop offset="100%" stop-color="#7fe3c0" stop-opacity=".12"/>
+              </linearGradient>
+            </defs>
+            <g class="map__grid">
+              <path d="M0 40H420M0 80H420M0 120H420M0 160H420M0 200H420M0 240H420M0 280H420"/>
+              <path d="M40 0V320M80 0V320M120 0V320M160 0V320M200 0V320M240 0V320M280 0V320M320 0V320M360 0V320M400 0V320"/>
+            </g>
+            <path class="map__zone" d="M60 210 L140 150 L250 162 L300 232 L212 282 L104 268 Z"/>
+            <path class="map__zone map__zone--b" d="M250 90 L330 78 L372 130 L322 178 L252 160 Z"/>
+            <g class="map__nodes">
+              <g class="map__node"><circle cx="170" cy="216" r="6"/><circle class="map__pulse" cx="170" cy="216" r="6"/><text x="184" y="221">武陵科学发展区</text></g>
+              <g class="map__node"><circle cx="300" cy="122" r="6"/><circle class="map__pulse" cx="300" cy="122" r="6"/><text x="314" y="127">宏山科学院</text></g>
+              <g class="map__node map__node--hot"><circle cx="238" cy="252" r="6"/><circle class="map__pulse" cx="238" cy="252" r="6"/><text x="252" y="257">息壤新材项目区</text></g>
+            </g>
+            <path class="map__link" d="M170 216 L300 122 M170 216 L238 252"/>
+          </svg>
+          <span class="map__scale">SCALE 1:50,000 · 裂隙监测中</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="project">
+    <div class="sec__head reveal">
+      <span class="sec__no">05</span>
+      <h2 class="sec__title">核心项目</h2>
+      <span class="sec__en">CORE&nbsp;PROJECT</span>
+      <span class="sec__line"></span>
+    </div>
+
+    <div class="project reveal">
+      <div class="project__top">
+        <div class="project__title">
+          <span class="project__kicker">PROJECT&nbsp;/&nbsp;XR-001</span>
+          <h3>息壤新材项目</h3>
+        </div>
+        <div class="project__status">
+          <span class="pulse"></span>持续在研
+        </div>
+      </div>
+
+      <div class="project__meta">
+        <div class="meta"><span>项目类型</span><b>科研 / 新型材料 / 裂隙治理</b></div>
+        <div class="meta"><span>项目负责人</span><b>庄方宜</b></div>
+        <div class="meta"><span>所属机构</span><b>宏山科学院</b></div>
+        <div class="meta"><span>合作单位</span><b>终末地工业</b></div>
+      </div>
+
+      <div class="project__body">
+        <p>
+          项目围绕<b>息壤新材</b>展开研究，尝试利用相关技术应对<b>裂隙及侵蚀</b>问题，
+          并进一步探索其在<b>土地、水源及城市建设</b>等方面的应用。
+        </p>
+        <p>
+          经过长期研究，息壤技术逐渐成为武陵发展的重要基础。
+          庄方宜目前仍负责该项目，并以此为基础继续推进武陵地区的裂隙研究。
+        </p>
+      </div>
+
+      <div class="project__flow">
+        <div class="flow">
+          <span class="flow__i">01</span>
+          <b>基础研究</b>
+          <p>息壤新材材料特性与源石反应机理研究。</p>
+        </div>
+        <div class="flow">
+          <span class="flow__i">02</span>
+          <b>裂隙治理</b>
+          <p>针对裂隙与侵蚀问题的技术验证与现场应用。</p>
+        </div>
+        <div class="flow">
+          <span class="flow__i">03</span>
+          <b>城市应用</b>
+          <p>土地、水源与城市建设等方向的成果转化。</p>
+        </div>
+        <div class="flow">
+          <span class="flow__i">04</span>
+          <b>长期合作</b>
+          <p>与终末地工业联合推进裂隙相关研究。</p>
+        </div>
+      </div>
+
+      <div class="project__tags tags">
+        <span>新型材料</span><span>裂隙治理</span><span>侵蚀应对</span><span>城市建设</span><span>区域发展</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="life">
+    <div class="sec__head reveal">
+      <span class="sec__no">06</span>
+      <h2 class="sec__title">兴趣与个人生活</h2>
+      <span class="sec__en">INTERESTS&nbsp;&amp;&nbsp;LIFE</span>
+      <span class="sec__line"></span>
+    </div>
+
+    <div class="grid grid--two grid--life">
+      <article class="card reveal">
+        <div class="card__cap"><i></i>公益与城市建设 / PUBLIC&nbsp;WORKS</div>
+        <h3 class="card__h">长期关注武陵居民的生活状况</h3>
+        <p class="card__p">
+          在庄方宜看来，科研成果最终仍应回到普通人的生活之中。因此，她除了负责科研项目，
+          也十分关注武陵的<b>城市建设与公共事务</b>。
+        </p>
+        <div class="meter-row">
+          <span class="meter-row__k">公共事务投入</span>
+          <span class="meters__bar"><i style="--v:88%"></i></span>
+        </div>
+        <div class="meter-row">
+          <span class="meter-row__k">居民生活关注</span>
+          <span class="meters__bar"><i style="--v:94%"></i></span>
+        </div>
+      </article>
+
+      <article class="card reveal" data-delay="1">
+        <div class="card__cap"><i></i>文化与生活 / CULTURE</div>
+        <h3 class="card__h">让城市成为可以长期生活的地方</h3>
+        <p class="card__p">
+          相比单纯追求科研发展，她希望武陵能够拥有更加丰富的文化生活，
+          让这座城市真正成为人们可以<b>长期生活</b>的地方。
+        </p>
+        <div class="tags">
+          <span>城市文化</span><span>公共空间</span><span>居民生活</span><span>长期发展</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid grid--two grid--gift">
+      <article class="gift reveal">
+        <div class="gift__cap"><span>喜欢的礼物</span><em>FAVORITE&nbsp;GIFT</em></div>
+        <div class="gift__stage">
+          <div class="gift__rings" aria-hidden="true"><i></i><i></i><i></i></div>
+          <figure class="gift__item">
+            <div class="gift__plate" style="--shot:url('assets/gift-balloon.jpg')" role="img" aria-label="龙泡泡气球"></div>
+            <img class="gift__img" src="assets/gift-balloon.jpg" alt="龙泡泡气球" width="466" height="565" loading="lazy">
+            <figcaption class="gift__tag"><b>龙泡泡气球</b><span>武陵 · 天师府严选</span></figcaption>
+          </figure>
+        </div>
+        <div class="gift__foot">
+          <h3>龙泡泡气球</h3>
+          <p>她把偏爱留给了这样一件小小的东西 —— 轻、圆、会飘起来的那一种。</p>
+        </div>
+      </article>
+
+      <article class="chibi reveal" data-delay="1">
+        <div class="chibi__cap"><span>生活侧写</span><em>DAILY&nbsp;SNAPSHOT</em></div>
+        <div class="chibi__stage">
+          <div class="chibi__blob" aria-hidden="true"></div>
+          <img class="chibi__img" src="assets/chibi.png" alt="庄方宜Q版形象" width="205" height="190" loading="lazy" decoding="async">
+        </div>
+        <div class="chibi__foot">
+          <h3>下班之后</h3>
+          <p>负责武陵的人，也会有把肩膀交给一只软乎乎伙伴的时刻。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="foot reveal">
+    <div class="foot__line"></div>
+    <div class="foot__main">
+      <div class="foot__left">
+        <span class="foot__mark">△</span>
+        <div>
+          <b>庄方宜 · 个人档案</b>
+          <span>WULING DEVELOPMENT ZONE / PERSONNEL FILE</span>
+        </div>
+      </div>
+      <div class="foot__right">
+        <span>档案编号 WL-0708</span>
+        <span id="year">2025</span>
+      </div>
+    </div>
+    <p class="foot__note">
+      本页面为个人简历演示站点，内容取材于角色档案资料。
+    </p>
+  </footer>
+
+</main>
+
+<button class="totop" id="totop" aria-label="回到顶部">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
